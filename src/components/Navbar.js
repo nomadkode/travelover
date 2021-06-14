@@ -11,7 +11,7 @@ const Nav = styled.nav`
   padding: 1rem 2rem;
   z-index: 100;
   position: fixed;
-  background: #000;
+  background: red;
 `;
 
 const NavLink = css`
@@ -30,12 +30,13 @@ const Logo = styled(Link)`
 `;
 
 const MenuBars = styled.i`
-  color: #f1f1f1;
+  display: none;
 `;
 
 const NavMenu = styled.div`
   display: flex;
   align-items: center;
+  margin-right: -48px;
 `;
 
 const NavMenuLinks = styled(Link)`
@@ -51,7 +52,7 @@ const NavBtn = styled.div`
 export const Navbar = () => {
   return (
     <Nav>
-      <Logo to="/">travelover</Logo>
+      <Logo to="/">TRAVELOVER</Logo>
       <MenuBars />
       <NavMenu>
         {menuData.map((item, index) => {
@@ -63,7 +64,9 @@ export const Navbar = () => {
         })}
       </NavMenu>
       <NavBtn>
-        <Button to="/contact">Contact Us</Button>
+        <Button to="/contact" primary="true">
+          Contact Us
+        </Button>
       </NavBtn>
     </Nav>
   );
