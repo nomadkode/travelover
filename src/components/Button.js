@@ -19,6 +19,6 @@ export const Button = styled(Link)`
   align-items: center;
 
   &:hover {
-    transform: translateY(-4px);
+    transform: translateY(-2px);
   }
 `;
