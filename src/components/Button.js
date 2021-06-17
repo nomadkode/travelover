@@ -9,6 +9,7 @@ export const Button = styled(Link)`
   white-space: nowrap;
   outline: none;
   border: none;
+  border-radius: 10px;
   min-width: 100px;
   max-width: 200px;
   cursor: pointer;
