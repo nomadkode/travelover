@@ -27,15 +27,15 @@ const HeroContent = styled.div``;
 const Arrow = styled(IoMdArrowRoundForward)``;
 const SliderButtons = styled.div`
   position: absolute;
-  bottom: 50px;
-  right: 50px;
+  bottom: 30px;
+  /* right: 50px; */
   display: flex;
   z-index: 10;
 `;
 
 const arrowButtons = css`
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   color: #f1f1f1;
   background: #000d1a;
   cursor: pointer;
@@ -54,9 +54,16 @@ const arrowButtons = css`
 
 const PrevArrow = styled(IoArrowBack)`
   ${arrowButtons}
+
+  &:hover {
+    transform: translateX(-10px);
+  }
 `;
 const NextArrow = styled(IoArrowForward)`
   ${arrowButtons}
+  &:hover {
+    transform: translateX(10px);
+  }
 `;
 
 export const Hero = ({ slides }) => {

@@ -24,7 +24,7 @@ export const heroData = [
   },
   {
     title: 'Mirador de Dalt Vila-Relais, Ibiza, Spain',
-    price: '$500',
+    price: '$550',
     path: '/resorts',
     label: 'View Resort',
     image: ImageThree,
@@ -32,7 +32,7 @@ export const heroData = [
   },
   {
     title: 'Aston Waikiki Beach Resort, Hawaii, US',
-    price: '$900',
+    price: '$890',
     path: '/resorts',
     label: 'View Resort',
     image: ImageFour,
@@ -40,7 +40,7 @@ export const heroData = [
   },
   {
     title: 'Four Seasons Resort Bora Bora, Bora Bora, Fr. Polynesia',
-    price: '$1800',
+    price: '$1500',
     path: '/resorts',
     label: 'View Resort',
     image: ImageFive,
@@ -48,7 +48,7 @@ export const heroData = [
   },
   {
     title: 'Alpine Design Resort, Grindelwald, Switzerland',
-    price: '$400',
+    price: '$450',
     path: '/resorts',
     label: 'View Resort',
     image: ImageSix,

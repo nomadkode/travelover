@@ -62,6 +62,7 @@ const NavMenuLinks = styled(Link)`
 
   transition: 0.3s;
   &:hover {
+    color: black;
     transform: translateY(-4px);
   }
 `;
