@@ -48,7 +48,7 @@ const arrowButtons = css`
   &:hover {
     background: #f1f1f1;
     color: #000d1a;
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
 `;
 

@@ -27,7 +27,7 @@ const NavLink = css`
 
 const Logo = styled(Link)`
   ${NavLink}
-  font-style: italic;
+  font-size: 1.2rem;
 `;
 
 const MenuBars = styled.i`
