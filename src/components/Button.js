@@ -9,7 +9,7 @@ export const Button = styled(Link)`
   white-space: nowrap;
   outline: none;
   border: none;
-  border-radius: 10px;
+  border-radius: 50px;
   min-width: 100px;
   max-width: 200px;
   cursor: pointer;
@@ -20,6 +20,8 @@ export const Button = styled(Link)`
   align-items: center;
 
   &:hover {
-    transform: translateY(-4px);
+    /* transform: translateY(-4px); */
+    background: #f1f1f1;
+    color: #ba135d;
   }
 `;

@@ -68,7 +68,7 @@ const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 1600px;
-  width: calc(100% - 100px);
+  width: calc(100% - 300px);
   color: #f1f1f1;
 
   h1 {
@@ -81,7 +81,7 @@ const HeroContent = styled.div`
   }
 
   p {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
     font-weight: 800;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
   }
@@ -183,6 +183,8 @@ export const Hero = ({ slides }) => {
 
                         &:hover {
                           transform: translateX(10px);
+                          background: #f1f1f1;
+                          color: #ba135d;
                         }
                       `}
                     >
