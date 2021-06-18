@@ -1,15 +1,17 @@
-import ImageOne from '../assets/santorini.jpg';
+import ImageOne from '../assets/borabora.jpg';
 import ImageTwo from '../assets/austria.jpg';
-import ImageThree from '../assets/ibiza.jpg';
-import ImageFour from '../assets/hawaii.jpg';
-import ImageFive from '../assets/borabora.jpg';
+import ImageThree from '../assets/bali.jpg';
+import ImageFour from '../assets/ibiza.jpg';
+import ImageFive from '../assets/kyoto.jpg';
 import ImageSix from '../assets/switzerland.jpg';
-import ImageSeven from '../assets/bali.jpg';
+import ImageSeven from '../assets/hawaii.jpg';
+import ImageEight from '../assets/santorini.jpg';
+import ImageNine from '../assets/phiphi.jpg';
 
 export const heroData = [
   {
-    title: 'Santorini, Greece',
-    price: '$400 / night',
+    title: 'Bora Bora, Fr. Polynesia',
+    price: '$1000 / night',
     path: '/resorts',
     label: 'View Resort',
     image: ImageOne,
@@ -24,24 +26,24 @@ export const heroData = [
     alt: 'Resort',
   },
   {
-    title: 'Ibiza, Spain',
-    price: '$550 / night',
+    title: 'Bali, Indonesia',
+    price: '$300 / night',
     path: '/resorts',
     label: 'View Resort',
     image: ImageThree,
     alt: 'Resort',
   },
   {
-    title: 'Hawaii, US',
-    price: '$900 / night',
+    title: 'Ibiza, Spain',
+    price: '$600 / night',
     path: '/resorts',
     label: 'View Resort',
     image: ImageFour,
     alt: 'Resort',
   },
   {
-    title: 'Bora Bora, Fr. Polynesia',
-    price: '$1500 / night',
+    title: 'Kyoto, Japan',
+    price: '$500 / night',
     path: '/resorts',
     label: 'View Resort',
     image: ImageFive,
@@ -56,11 +58,27 @@ export const heroData = [
     alt: 'Resort',
   },
   {
-    title: 'Bali, Indonesia',
-    price: '$300 / night',
+    title: 'Hawaii, United States',
+    price: '$800 / night',
     path: '/resorts',
     label: 'View Resort',
     image: ImageSeven,
+    alt: 'Resort',
+  },
+  {
+    title: 'Santorini, Greece',
+    price: '$400 / night',
+    path: '/resorts',
+    label: 'View Resort',
+    image: ImageEight,
+    alt: 'Resort',
+  },
+  {
+    title: 'Phi Phi Island, Thailand',
+    price: '$400 / night',
+    path: '/resorts',
+    label: 'View Resort',
+    image: ImageNine,
     alt: 'Resort',
   },
 ];
