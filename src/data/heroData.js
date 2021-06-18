@@ -27,7 +27,7 @@ export const heroData = [
   },
   {
     title: 'Bali, Indonesia',
-    price: '$300 / night',
+    price: '$350 / night',
     path: '/resorts',
     label: 'View Resort',
     image: ImageThree,
@@ -35,7 +35,7 @@ export const heroData = [
   },
   {
     title: 'Ibiza, Spain',
-    price: '$600 / night',
+    price: '$750 / night',
     path: '/resorts',
     label: 'View Resort',
     image: ImageFour,
@@ -59,7 +59,7 @@ export const heroData = [
   },
   {
     title: 'Hawaii, United States',
-    price: '$800 / night',
+    price: '$1200 / night',
     path: '/resorts',
     label: 'View Resort',
     image: ImageSeven,
@@ -67,7 +67,7 @@ export const heroData = [
   },
   {
     title: 'Santorini, Greece',
-    price: '$400 / night',
+    price: '$600 / night',
     path: '/resorts',
     label: 'View Resort',
     image: ImageEight,
@@ -75,7 +75,7 @@ export const heroData = [
   },
   {
     title: 'Phi Phi Island, Thailand',
-    price: '$400 / night',
+    price: '$300 / night',
     path: '/resorts',
     label: 'View Resort',
     image: ImageNine,
