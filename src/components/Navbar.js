@@ -12,7 +12,6 @@ const Nav = styled.nav`
   padding: 1rem 2rem;
   z-index: 100;
   position: fixed;
-  background: #3edbf0;
 `;
 
 const NavLink = css`
@@ -28,6 +27,12 @@ const NavLink = css`
 const Logo = styled(Link)`
   ${NavLink}
   font-size: 1.2rem;
+  font-weight: bold;
+  font-style: italic;
+
+  &:hover {
+    color: #ba135d;
+  }
 `;
 
 const MenuBars = styled.i`
@@ -62,7 +67,7 @@ const NavMenuLinks = styled(Link)`
 
   transition: 0.3s;
   &:hover {
-    color: black;
+    color: #ba135d;
     transform: translateY(-4px);
   }
 `;

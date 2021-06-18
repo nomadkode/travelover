@@ -1,57 +1,66 @@
-import ImageOne from '../assets/kayon.jpg';
-import ImageTwo from '../assets/abasa.jpg';
-import ImageThree from '../assets/mirador.jpg';
-import ImageFour from '../assets/waikiki.jpg';
+import ImageOne from '../assets/santorini.jpg';
+import ImageTwo from '../assets/austria.jpg';
+import ImageThree from '../assets/ibiza.jpg';
+import ImageFour from '../assets/hawaii.jpg';
 import ImageFive from '../assets/borabora.jpg';
-import ImageSix from '../assets/alpine.jpg';
+import ImageSix from '../assets/switzerland.jpg';
+import ImageSeven from '../assets/bali.jpg';
 
 export const heroData = [
   {
-    title: 'The Kayon Jungle Resort, Bali, Indonesia',
-    price: '$400',
+    title: 'Santorini, Greece',
+    price: '$400 / night',
     path: '/resorts',
     label: 'View Resort',
     image: ImageOne,
     alt: 'Resort',
   },
   {
-    title: 'Abasa Suite & Resort, Santorini, Greece',
-    price: '$300',
+    title: 'Kaprun, Austria',
+    price: '$400 / night',
     path: '/resorts',
     label: 'View Resort',
     image: ImageTwo,
     alt: 'Resort',
   },
   {
-    title: 'Mirador de Dalt Vila-Relais, Ibiza, Spain',
-    price: '$550',
+    title: 'Ibiza, Spain',
+    price: '$550 / night',
     path: '/resorts',
     label: 'View Resort',
     image: ImageThree,
     alt: 'Resort',
   },
   {
-    title: 'Aston Waikiki Beach Resort, Hawaii, US',
-    price: '$890',
+    title: 'Hawaii, US',
+    price: '$900 / night',
     path: '/resorts',
     label: 'View Resort',
     image: ImageFour,
     alt: 'Resort',
   },
   {
-    title: 'Four Seasons Resort Bora Bora, Bora Bora, Fr. Polynesia',
-    price: '$1500',
+    title: 'Bora Bora, Fr. Polynesia',
+    price: '$1500 / night',
     path: '/resorts',
     label: 'View Resort',
     image: ImageFive,
     alt: 'Resort',
   },
   {
-    title: 'Alpine Design Resort, Grindelwald, Switzerland',
-    price: '$450',
+    title: 'Lauterbrunnen, Switzerland',
+    price: '$450 / night',
     path: '/resorts',
     label: 'View Resort',
     image: ImageSix,
+    alt: 'Resort',
+  },
+  {
+    title: 'Bali, Indonesia',
+    price: '$300 / night',
+    path: '/resorts',
+    label: 'View Resort',
+    image: ImageSeven,
     alt: 'Resort',
   },
 ];
