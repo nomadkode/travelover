@@ -15,7 +15,7 @@ export const heroData = [
     alt: 'Resort',
   },
   {
-    title: 'Abasa Suites, Santorini, Greece',
+    title: 'Abasa Suite & Resort, Santorini, Greece',
     price: '$300',
     path: '/resorts',
     label: 'View Resort',

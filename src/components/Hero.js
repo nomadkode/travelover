@@ -3,6 +3,7 @@ import { Button } from './Button';
 import { IoMdArrowRoundForward } from 'react-icons/io';
 import { IoArrowForward, IoArrowBack } from 'react-icons/io5';
 
+//* Hero
 const HeroSection = styled.section`
   height: 100vh;
   max-height: 1100px;
@@ -24,24 +25,25 @@ const HeroSlider = styled.div``;
 const HeroImage = styled.img``;
 const HeroContent = styled.div``;
 
-const Arrow = styled(IoMdArrowRoundForward)``;
+//* Slider Buttons
 const SliderButtons = styled.div`
   position: absolute;
-  bottom: 30px;
+  bottom: 40px;
   /* right: 50px; */
   display: flex;
   z-index: 10;
 `;
+const Arrow = styled(IoMdArrowRoundForward)``;
 
+//* Arrow Buttons
 const arrowButtons = css`
   width: 40px;
   height: 40px;
   color: #f1f1f1;
   background: #000d1a;
   cursor: pointer;
-  border-radius: 50px;
   padding: 10px;
-  margin-right: 1rem;
+  margin-right: 0.1rem;
   user-select: none;
   transition: 0.3s;
 
@@ -54,13 +56,14 @@ const arrowButtons = css`
 
 const PrevArrow = styled(IoArrowBack)`
   ${arrowButtons}
-
+  border-radius: 100% 0% 0% 100% / 50% 50% 50% 50%;
   &:hover {
     transform: translateX(-10px);
   }
 `;
 const NextArrow = styled(IoArrowForward)`
   ${arrowButtons}
+  border-radius: 0% 100% 100% 0% / 50% 50% 50% 50%;
   &:hover {
     transform: translateX(10px);
   }
@@ -83,6 +86,11 @@ export const Hero = ({ slides }) => {
                     primary="true"
                     css={`
                       max-width: 160px;
+                      /* border-radius: 27% 73% 43% 57% / 54% 38% 62% 46%; */
+
+                      &:hover {
+                        transform: translateX(10px);
+                      }
                     `}
                   >
                     {slide.label}

@@ -1,3 +1,9 @@
+# This Web App is using:
+
+- React JS
+- Styled Components / CSS in JS
+- React Icons
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
