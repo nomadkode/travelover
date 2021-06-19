@@ -61,6 +61,7 @@ const HeroImage = styled.img`
   height: 100vh;
   width: 100vw;
   object-fit: cover;
+  opacity: 0.9;
 `;
 const HeroContent = styled.div`
   position: relative;
@@ -69,21 +70,21 @@ const HeroContent = styled.div`
   flex-direction: column;
   max-width: 1600px;
   width: calc(100% - 300px);
-  color: #f1f1f1;
+  color: #fff;
 
   h1 {
     font-size: clamp(1rem, 8vw, 2rem);
-    font-weight: 600;
+    font-weight: 800;
     text-transform: uppercase;
-    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
     text-align: left;
     margin-bottom: 0.8rem;
   }
 
   p {
     margin-bottom: 1.5rem;
-    font-weight: 800;
-    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    font-weight: 600;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
   }
 `;
 
