@@ -1,6 +1,7 @@
 import GlobalStyle from './globalStyles';
-import { Navbar } from './components/Navbar';
+import { Dropdown } from './components/Dropdown';
 import { Hero } from './components/Hero';
+import { Navbar } from './components/Navbar';
 import { heroData } from './data/heroData';
 
 const App = () => {
@@ -8,6 +9,7 @@ const App = () => {
     <div>
       <GlobalStyle />
       <Navbar />
+      <Dropdown />
       <Hero slides={heroData} />
     </div>
   );

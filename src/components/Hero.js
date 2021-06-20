@@ -92,7 +92,6 @@ const HeroContent = styled.div`
 const SliderButtons = styled.div`
   position: absolute;
   bottom: 40px;
-  /* right: 50px; */
   display: flex;
   z-index: 10;
 `;
