@@ -68,8 +68,8 @@ const HeroContent = styled.div`
   z-index: 10;
   display: flex;
   flex-direction: column;
-  max-width: 1600px;
-  width: calc(100% - 300px);
+  max-width: 1000px;
+  width: calc(100% - 150px);
   color: #fff;
 
   h1 {
@@ -139,6 +139,7 @@ export const Hero = ({ slides }) => {
   const length = slides.length;
   const timeout = useRef(null);
 
+  //* Auto Slides
   useEffect(() => {
     const nextSlide = () => {
       setCurrent((current) => (current === length - 1 ? 0 : current + 1));
@@ -154,9 +155,17 @@ export const Hero = ({ slides }) => {
   }, [current, length]);
 
   const nextSlide = () => {
+    if (timeout.current) {
+      clearTimeout(timeout.current);
+    }
+
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
   const prevSlide = () => {
+    if (timeout.current) {
+      clearTimeout(timeout.current);
+    }
+
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
 
