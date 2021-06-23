@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import styled, { css } from 'styled-components/macro';
 import { Link } from 'react-router-dom';
 import { menuData } from '../data/menuData';
@@ -12,6 +13,7 @@ const Nav = styled.nav`
   padding: 1rem 2rem;
   z-index: 100;
   position: fixed;
+  background: ${({ navbar }) => (navbar ? '#000' : 'transparent')};
 `;
 
 const NavLink = css`
@@ -68,7 +70,7 @@ const NavMenuLinks = styled(Link)`
   transition: 0.3s;
   &:hover {
     color: #ba135d;
-    transform: translateY(-4px);
+    transform: translateY(-5px);
   }
 `;
 
@@ -83,8 +85,20 @@ const NavBtn = styled.div`
 `;
 
 export const Navbar = ({ toggle }) => {
+  const [navbar, setNavbar] = useState(false);
+
+  const changeBackground = () => {
+    if (window.scrollY >= 100) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener('scroll', changeBackground);
+
   return (
-    <Nav>
+    <Nav navbar={navbar}>
       <Logo to="/">TRAVELOVER</Logo>
       <MenuBars onClick={toggle} />
       <NavMenu>

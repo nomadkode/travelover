@@ -2,7 +2,7 @@ import ImageOne from '../assets/borabora.jpg';
 import ImageTwo from '../assets/austria.jpg';
 
 export const infoData = {
-  heading: 'Explore our beautiful resorts',
+  heading: 'Explore Beautiful Bora - Bora',
   paragraphOne:
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nam officia voluptas, magni numquam libero excepturi at? Delectus dolore cumque, nostrum dolor hic natus blanditiis perferendis eos repellendus! Harum, distinctio.',
   paragraphTwo:

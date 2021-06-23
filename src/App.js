@@ -6,6 +6,7 @@ import { Hero } from './components/Hero';
 import { InfoSection } from './components/InfoSection';
 import { heroData } from './data/heroData';
 import { infoData } from './data/infoData';
+import { infoDataTwo } from './data/infoData';
 
 const App = () => {
   const [openIcon, setOpenIcon] = useState(false);
@@ -21,6 +22,7 @@ const App = () => {
       <Dropdown openIcon={openIcon} toggle={toggle} />
       <Hero slides={heroData} />
       <InfoSection {...infoData} />
+      <InfoSection {...infoDataTwo} />
     </div>
   );
 };

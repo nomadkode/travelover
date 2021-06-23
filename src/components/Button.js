@@ -20,7 +20,7 @@ export const Button = styled(Link)`
   align-items: center;
 
   &:hover {
-    /* transform: translateY(-4px); */
+    transform: translateY(-3px);
     background: #f1f1f1;
     color: #ba135d;
   }

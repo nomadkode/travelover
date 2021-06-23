@@ -53,8 +53,8 @@ const RightContainer = styled.div`
     object-fit: cover;
 
     @media screen and (max-width: 768px) {
-      width: 60%;
-      height: 60%;
+      width: 90%;
+      height: 90%;
     }
   }
 `;
