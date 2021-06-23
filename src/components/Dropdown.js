@@ -9,14 +9,14 @@ const DropdownContainer = styled.div`
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: #f1f1f1;
+  background: #000;
   display: grid;
   align-items: center;
   top: 0;
   left: 0;
   transition: 0.3s ease-in-out;
-  opacity: 1;
-  top: 0;
+  opacity: ${({ openIcon }) => (openIcon ? '1' : '0')};
+  top: ${({ openIcon }) => (openIcon ? '0' : '-100%')};
 `;
 
 const Icon = styled.div`
@@ -29,7 +29,7 @@ const Icon = styled.div`
   outline: none;
 `;
 const CloseIcon = styled(FaTimes)`
-  color: #000;
+  color: #f1f1f1;
 `;
 const DropdownWrap = styled.div``;
 const DropdownMenu = styled.div`
@@ -38,19 +38,36 @@ const DropdownMenu = styled.div`
   grid-template-rows: repeat(4, 80px);
   text-align: center;
   margin-bottom: 4rem;
+
+  @media screen and (max-width: 488px) {
+    grid-template-rows: repeat(4, 60px);
+  }
 `;
 const DropdownLink = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #000;
-`;
-const BtnWrap = styled.div``;
+  color: #f1f1f1;
+  font-size: 1.5rem;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 
-export const Dropdown = () => {
+  &:hover {
+    color: #ba135d;
+  }
+`;
+const BtnWrap = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Dropdown = ({ openIcon, toggle }) => {
   return (
-    <DropdownContainer>
-      <Icon>
+    <DropdownContainer openIcon={openIcon} onClick={toggle}>
+      <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
       <DropdownWrap>

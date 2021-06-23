@@ -82,11 +82,11 @@ const NavBtn = styled.div`
   }
 `;
 
-export const Navbar = () => {
+export const Navbar = ({ toggle }) => {
   return (
     <Nav>
       <Logo to="/">TRAVELOVER</Logo>
-      <MenuBars />
+      <MenuBars onClick={toggle} />
       <NavMenu>
         {menuData.map((item, index) => {
           return (
