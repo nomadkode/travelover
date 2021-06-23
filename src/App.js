@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import GlobalStyle from './globalStyles';
+import { Navbar } from './components/Navbar';
 import { Dropdown } from './components/Dropdown';
 import { Hero } from './components/Hero';
-import { Navbar } from './components/Navbar';
+import { InfoSection } from './components/InfoSection';
 import { heroData } from './data/heroData';
+import { infoData } from './data/infoData';
 
 const App = () => {
   const [openIcon, setOpenIcon] = useState(false);
@@ -18,6 +20,7 @@ const App = () => {
       <Navbar toggle={toggle} />
       <Dropdown openIcon={openIcon} toggle={toggle} />
       <Hero slides={heroData} />
+      <InfoSection {...infoData} />
     </div>
   );
 };
