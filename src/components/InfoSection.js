@@ -38,10 +38,10 @@ const LeftContainer = styled.div`
 `;
 const RightContainer = styled.div`
   padding: 1rem 2rem;
-  order: ${({ reverse }) => (reverse ? '1' : '2')};
   display: flex;
   justify-content: center;
   align-items: center;
+  order: ${({ reverse }) => (reverse ? '1' : '2')};
 
   @media screen and (max-width: 768px) {
     order: ${({ reverse }) => (reverse ? '2' : '1')};
@@ -53,8 +53,8 @@ const RightContainer = styled.div`
     object-fit: cover;
 
     @media screen and (max-width: 768px) {
-      width: 90%;
-      height: 90%;
+      width: 100%;
+      height: 100%;
     }
   }
 `;
@@ -64,8 +64,8 @@ export const InfoSection = ({
   paragraphOne,
   paragraphTwo,
   buttonLabel,
-  image,
   reverse,
+  image,
 }) => {
   return (
     <Section>
@@ -74,12 +74,12 @@ export const InfoSection = ({
           <h1>{heading}</h1>
           <p>{paragraphOne}</p>
           <p>{paragraphTwo}</p>
-          <Button to="/resorts" primary="true">
+          <Button to="/destinations" primary="true">
             {buttonLabel}
           </Button>
         </LeftContainer>
         <RightContainer reverse={reverse}>
-          <img src={image} alt="resort" />
+          <img src={image} alt="destinations" />
         </RightContainer>
       </Container>
     </Section>
