@@ -174,38 +174,36 @@ export const Hero = ({ slides }) => {
   return (
     <HeroSection>
       <HeroContainer>
-        {slides.map((slide, index) => {
-          return (
-            <HeroSlide key={index}>
-              {index === current && (
-                <HeroSlider>
-                  <HeroImage src={slide.image} alt={slide.alt} />
-                  <HeroContent>
-                    <h1>{slide.title}</h1>
-                    <p>{slide.price}</p>
-                    <Button
-                      to={slide.path}
-                      primary="true"
-                      css={`
-                        max-width: 160px;
-                        border-radius: 27% 73% 43% 57% / 54% 38% 62% 46%;
+        {slides.map((slide, index) => (
+          <HeroSlide key={index}>
+            {index === current && (
+              <HeroSlider>
+                <HeroImage src={slide.image} alt={slide.alt} />
+                <HeroContent>
+                  <h1>{slide.title}</h1>
+                  <p>{slide.price}</p>
+                  <Button
+                    to={slide.path}
+                    primary="true"
+                    css={`
+                      max-width: 160px;
+                      border-radius: 27% 73% 43% 57% / 54% 38% 62% 46%;
 
-                        &:hover {
-                          transform: translateX(10px);
-                          background: #f1f1f1;
-                          color: #ba135d;
-                        }
-                      `}
-                    >
-                      {slide.label}
-                      <Arrow />
-                    </Button>
-                  </HeroContent>
-                </HeroSlider>
-              )}
-            </HeroSlide>
-          );
-        })}
+                      &:hover {
+                        transform: translateX(10px);
+                        background: #f1f1f1;
+                        color: #ba135d;
+                      }
+                    `}
+                  >
+                    {slide.label}
+                    <Arrow />
+                  </Button>
+                </HeroContent>
+              </HeroSlider>
+            )}
+          </HeroSlide>
+        ))}
         <SliderButtons>
           <PrevArrow onClick={prevSlide} />
           <NextArrow onClick={nextSlide} />

@@ -9,7 +9,7 @@ const DropdownContainer = styled.div`
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: #ba135d;
+  background: #f1f1f1;
   display: grid;
   align-items: center;
   top: 0;
@@ -19,11 +19,32 @@ const DropdownContainer = styled.div`
   top: 0;
 `;
 
-const Icon = styled.div``;
-const CloseIcon = styled(FaTimes)``;
+const Icon = styled.div`
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
+  background: transparent;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
+`;
+const CloseIcon = styled(FaTimes)`
+  color: #000;
+`;
 const DropdownWrap = styled.div``;
-const DropdownMenu = styled.div``;
-const DropdownLink = styled(Link)``;
+const DropdownMenu = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 80px);
+  text-align: center;
+  margin-bottom: 4rem;
+`;
+const DropdownLink = styled(Link)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+`;
 const BtnWrap = styled.div``;
 
 export const Dropdown = () => {
@@ -34,13 +55,11 @@ export const Dropdown = () => {
       </Icon>
       <DropdownWrap>
         <DropdownMenu>
-          {menuData.map((item, index) => {
-            return (
-              <DropdownLink to={item.link} key={index}>
-                {item.title}
-              </DropdownLink>
-            );
-          })}
+          {menuData.map((item, index) => (
+            <DropdownLink to={item.link} key={index}>
+              {item.title}
+            </DropdownLink>
+          ))}
         </DropdownMenu>
         <BtnWrap>
           <Button primary="true" round="true" to="/contact">

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export const Button = styled(Link)`
   background: ${({ primary }) => (primary ? '#BA135D' : '#000d1a')};
   padding: ${({ big }) => (big ? '16px 40px' : '14px 24px')};
-  color: ${({ primary }) => (primary ? '#f1f1f1' : '#000d1a')};
+  color: ${({ primary }) => (primary ? '#f1f1f1' : '#BA135D')};
   font-size: ${({ big }) => (big ? '20px' : '14px')};
   white-space: nowrap;
   outline: none;
