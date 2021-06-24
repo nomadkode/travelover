@@ -4,8 +4,8 @@ import { Button } from './Button';
 const Section = styled.section`
   width: 100%;
   height: 100%;
-  padding: 4rem 0;
-  background: #000;
+  padding: 1rem 0;
+  background: #0a1931;
   color: #f1f1f1;
 `;
 
@@ -35,7 +35,12 @@ const LeftContainer = styled.div`
   p {
     margin-bottom: 2rem;
   }
+
+  @media screen and (max-width: 768px) {
+    margin-top: -20rem;
+  }
 `;
+
 const RightContainer = styled.div`
   padding: 1rem 2rem;
   display: flex;
@@ -45,6 +50,8 @@ const RightContainer = styled.div`
 
   @media screen and (max-width: 768px) {
     order: ${({ reverse }) => (reverse ? '2' : '1')};
+    padding: 0;
+    margin-top: -15rem;
   }
 
   img {

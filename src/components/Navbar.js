@@ -13,11 +13,12 @@ const Nav = styled.nav`
   padding: 1rem 2rem;
   z-index: 100;
   position: fixed;
-  background: ${({ navbar }) => (navbar ? '#000' : 'transparent')};
+  background: ${({ navbar }) => (navbar ? '#171717' : 'transparent')};
 `;
 
 const NavLink = css`
   color: #fff;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: center;
   padding: 0 1rem;
