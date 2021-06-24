@@ -13,7 +13,7 @@ const Nav = styled.nav`
   padding: 1rem 2rem;
   z-index: 100;
   position: fixed;
-  background: ${({ navbar }) => (navbar ? '#171717' : 'transparent')};
+  background: ${({ navbar }) => (navbar ? '#0a1931' : 'transparent')};
 `;
 
 const NavLink = css`
