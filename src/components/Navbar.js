@@ -1,9 +1,9 @@
-import { useState } from 'react';
-import styled, { css } from 'styled-components/macro';
-import { Link } from 'react-router-dom';
-import { menuData } from '../data/menuData';
-import { Button } from './Button';
-import Bars from '../assets/bars.svg';
+import { useState, useEffect, memo } from "react";
+import styled, { css } from "styled-components/macro";
+import { Link } from "react-router-dom";
+import { menuData } from "../data/menuData";
+import { Button } from "./Button";
+import Bars from "../assets/bars.svg";
 
 const Nav = styled.nav`
   height: 60px;
@@ -13,7 +13,7 @@ const Nav = styled.nav`
   padding: 1rem 2rem;
   z-index: 100;
   position: fixed;
-  background: ${({ navbar }) => (navbar ? '#0a1931' : 'transparent')};
+  background: ${({ navbar }) => (navbar ? "#0a1931" : "transparent")};
 `;
 
 const NavLink = css`
@@ -85,31 +85,29 @@ const NavBtn = styled.div`
   }
 `;
 
-export const Navbar = ({ toggle }) => {
+export const Navbar = memo(({ toggle }) => {
   const [navbar, setNavbar] = useState(false);
 
-  const changeBackground = () => {
-    if (window.scrollY >= 100) {
-      setNavbar(true);
-    } else {
-      setNavbar(false);
-    }
-  };
+  useEffect(() => {
+    const changeBackground = () => void setNavbar(window.scrollY >= 100);
 
-  window.addEventListener('scroll', changeBackground);
+    window.addEventListener("scroll", changeBackground);
+
+    return () => {
+      window.removeEventListener("scroll", changeBackground);
+    };
+  }, []);
 
   return (
     <Nav navbar={navbar}>
       <Logo to="/">TRAVELOVER</Logo>
       <MenuBars onClick={toggle} />
       <NavMenu>
-        {menuData.map((item, index) => {
-          return (
-            <NavMenuLinks to={item.Link} key={index}>
-              {item.title}
-            </NavMenuLinks>
-          );
-        })}
+        {menuData.map((item, index) => (
+          <NavMenuLinks to={item.Link} key={index}>
+            {item.title}
+          </NavMenuLinks>
+        ))}
       </NavMenu>
       <NavBtn>
         <Button to="/contact" primary="true">
@@ -118,4 +116,4 @@ export const Navbar = ({ toggle }) => {
       </NavBtn>
     </Nav>
   );
-};
+});

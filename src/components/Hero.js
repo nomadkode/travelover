@@ -1,8 +1,8 @@
-import { useState, useEffect, useRef } from 'react';
-import styled, { css } from 'styled-components/macro';
-import { Button } from './Button';
-import { IoMdArrowRoundForward } from 'react-icons/io';
-import { IoArrowForward, IoArrowBack } from 'react-icons/io5';
+import { useState, useEffect, useCallback, useRef, useMemo, memo } from "react";
+import styled, { css } from "styled-components/macro";
+import { Button } from "./Button";
+import { IoMdArrowRoundForward } from "react-icons/io";
+import { IoArrowForward, IoArrowBack } from "react-icons/io5";
 
 //* Hero
 const HeroSection = styled.section`
@@ -37,7 +37,7 @@ const HeroSlider = styled.div`
   justify-content: center;
 
   &::before {
-    content: '';
+    content: "";
     height: 100%;
     width: 100%;
     z-index: 2;
@@ -133,9 +133,9 @@ const NextArrow = styled(IoArrowForward)`
   }
 `;
 
-export const Hero = ({ slides }) => {
+export const Hero = memo(({ slides }) => {
   const [current, setCurrent] = useState(0);
-  const length = slides.length;
+  const length = useMemo(() => slides.length, [slides]);
   const timeout = useRef(null);
 
   //* Auto Slides
@@ -153,24 +153,25 @@ export const Hero = ({ slides }) => {
     };
   }, [current, length]);
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     if (timeout.current) {
       clearTimeout(timeout.current);
     }
 
     setCurrent(current === length - 1 ? 0 : current + 1);
-  };
-  const prevSlide = () => {
+  }, [timeout, current, length]);
+  const prevSlide = useCallback(() => {
     if (timeout.current) {
       clearTimeout(timeout.current);
     }
 
     setCurrent(current === 0 ? length - 1 : current - 1);
-  };
+  }, [timeout, current, length]);
 
   if (!Array.isArray(slides) || slides.length <= 0) {
     return null;
   }
+
   return (
     <HeroSection>
       <HeroContainer>
@@ -211,4 +212,4 @@ export const Hero = ({ slides }) => {
       </HeroContainer>
     </HeroSection>
   );
-};
+});
