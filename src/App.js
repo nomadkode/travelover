@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import GlobalStyle from './globalStyles';
+import GlobalStyle from './GlobalStyles';
 import { Navbar } from './components/Navbar';
 import { Dropdown } from './components/Dropdown';
 import { Hero } from './components/Hero';

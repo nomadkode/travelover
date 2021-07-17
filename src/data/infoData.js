@@ -1,9 +1,9 @@
-import ImageOne from '../assets/borabora.jpg';
+import ImageOne from '../assets/phiphi.jpg';
 import ImageTwo from '../assets/austria.jpg';
-import ImageThree from '../assets/bali.jpg';
+import ImageThree from '../assets/cappadocia.jpg';
 
 export const infoData = {
-  heading: 'Explore Beautiful beach in Bora - Bora',
+  heading: 'Explore Beautiful beach in Phi Phi Island, Thailand',
   paragraphOne:
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nam officia voluptas, magni numquam libero excepturi at? Delectus dolore cumque, nostrum dolor hic natus blanditiis perferendis eos repellendus! Harum, distinctio.',
   paragraphTwo:
@@ -27,7 +27,7 @@ export const infoDataTwo = {
 };
 
 export const infoDataThree = {
-  heading: 'Explore Beautiful Ubud in Bali',
+  heading: 'Explore Beautiful Scenery of Cappadocia, Turkey',
   paragraphOne:
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nam officia voluptas, magni numquam libero excepturi at? Delectus dolore cumque, nostrum dolor hic natus blanditiis perferendis eos repellendus! Harum, distinctio.',
   paragraphTwo:
