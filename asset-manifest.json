@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/travelover/static/js/main.816dabb8.chunk.js",
-    "main.js.map": "/travelover/static/js/main.816dabb8.chunk.js.map",
+    "main.js": "/travelover/static/js/main.012c82b6.chunk.js",
+    "main.js.map": "/travelover/static/js/main.012c82b6.chunk.js.map",
     "runtime-main.js": "/travelover/static/js/runtime-main.272c454d.js",
     "runtime-main.js.map": "/travelover/static/js/runtime-main.272c454d.js.map",
     "static/js/2.6a0d2f72.chunk.js": "/travelover/static/js/2.6a0d2f72.chunk.js",
@@ -31,6 +31,6 @@
   "entrypoints": [
     "static/js/runtime-main.272c454d.js",
     "static/js/2.6a0d2f72.chunk.js",
-    "static/js/main.816dabb8.chunk.js"
+    "static/js/main.012c82b6.chunk.js"
   ]
 }
