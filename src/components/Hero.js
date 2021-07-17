@@ -81,7 +81,7 @@ const HeroContent = styled.div`
     color: #f1f1f1;
 
     &:hover {
-      color: #ba135d;
+      text-shadow: 0px 0px 20px #ba135d;
     }
   }
 
@@ -92,7 +92,7 @@ const HeroContent = styled.div`
     color: #f1f1f1;
 
     &:hover {
-      color: #ba135d;
+      text-shadow: 0px 0px 20px #ba135d;
     }
   }
 `;
