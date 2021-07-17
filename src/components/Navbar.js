@@ -105,7 +105,7 @@ export const Navbar = ({ toggle }) => {
       <NavMenu>
         {menuData.map((item, index) => {
           return (
-            <NavMenuLinks to={item.Link} key={index}>
+            <NavMenuLinks to={item.link} key={index}>
               {item.title}
             </NavMenuLinks>
           );
