@@ -19,7 +19,7 @@ export const heroData = [
   {
     title: 'Bora Bora, Fr. Polynesia',
     price: '$1000 / night',
-    path: '/destinations',
+    path: '/',
     label: 'View Destinations',
     image: ImageOne,
     alt: 'Destinations',
@@ -27,7 +27,7 @@ export const heroData = [
   {
     title: 'Kaprun, Austria',
     price: '$400 / night',
-    path: '/destinations',
+    path: '/',
     label: 'View Destinations',
     image: ImageTwo,
     alt: 'Destinations',
@@ -35,7 +35,7 @@ export const heroData = [
   {
     title: 'Bali, Indonesia',
     price: '$350 / night',
-    path: '/destinations',
+    path: '/',
     label: 'View Destinations',
     image: ImageThree,
     alt: 'Destinations',
@@ -43,7 +43,7 @@ export const heroData = [
   {
     title: 'Ibiza, Spain',
     price: '$750 / night',
-    path: '/destinations',
+    path: '/',
     label: 'View Destinations',
     image: ImageFour,
     alt: 'Destinations',
@@ -51,7 +51,7 @@ export const heroData = [
   {
     title: 'Kyoto, Japan',
     price: '$500 / night',
-    path: '/destinations',
+    path: '/',
     label: 'View Destinations',
     image: ImageFive,
     alt: 'Destinations',
@@ -59,7 +59,7 @@ export const heroData = [
   {
     title: 'Lauterbrunnen, Switzerland',
     price: '$450 / night',
-    path: '/destinations',
+    path: '/',
     label: 'View Destinations',
     image: ImageSix,
     alt: 'Destinations',
@@ -67,7 +67,7 @@ export const heroData = [
   {
     title: 'Hawaii, United States',
     price: '$1200 / night',
-    path: '/destinations',
+    path: '/',
     label: 'View Destinations',
     image: ImageSeven,
     alt: 'Destinations',
@@ -75,7 +75,7 @@ export const heroData = [
   {
     title: 'Santorini, Greece',
     price: '$600 / night',
-    path: '/destinations',
+    path: '/',
     label: 'View Destinations',
     image: ImageEight,
     alt: 'Destinations',
@@ -83,7 +83,7 @@ export const heroData = [
   {
     title: 'Phi Phi Island, Thailand',
     price: '$300 / night',
-    path: '/destinations',
+    path: '/',
     label: 'View Destinations',
     image: ImageNine,
     alt: 'Destinations',
@@ -91,7 +91,7 @@ export const heroData = [
   {
     title: 'Nassau, Bahamas',
     price: '$700 / night',
-    path: '/destinations',
+    path: '/',
     label: 'View Destinations',
     image: ImageTen,
     alt: 'Destinations',
@@ -99,7 +99,7 @@ export const heroData = [
   {
     title: 'Cappadocia, Turkey',
     price: '$350 / night',
-    path: '/destinations',
+    path: '/',
     label: 'View Destinations',
     image: ImageEleven,
     alt: 'Destinations',
@@ -107,7 +107,7 @@ export const heroData = [
   {
     title: 'Heidelberg, Germany',
     price: '$350 / night',
-    path: '/destinations',
+    path: '/',
     label: 'View Destinations',
     image: ImageTwelve,
     alt: 'Destinations',
@@ -115,7 +115,7 @@ export const heroData = [
   {
     title: 'Mendoza, Argentina',
     price: '$450 / night',
-    path: '/destinations',
+    path: '/',
     label: 'View Destinations',
     image: ImageThirteen,
     alt: 'Destinations',
@@ -123,7 +123,7 @@ export const heroData = [
   {
     title: 'Nairobi, Kenya',
     price: '$500 / night',
-    path: '/destinations',
+    path: '/',
     label: 'View Destinations',
     image: ImageFourteen,
     alt: 'Destinations',
@@ -131,7 +131,7 @@ export const heroData = [
   {
     title: 'Petra, Jordan',
     price: '$300 / night',
-    path: '/destinations',
+    path: '/',
     label: 'View Destinations',
     image: ImageFifteen,
     alt: 'Destinations',
@@ -139,7 +139,7 @@ export const heroData = [
   {
     title: 'Rio de Janeiro, Brazil',
     price: '$400 / night',
-    path: '/destinations',
+    path: '/',
     label: 'View Destinations',
     image: ImageSixteen,
     alt: 'Destinations',
