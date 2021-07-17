@@ -70,7 +70,6 @@ const HeroContent = styled.div`
   flex-direction: column;
   max-width: 1000px;
   width: calc(100% - 150px);
-  color: #fff;
 
   h1 {
     font-size: clamp(1rem, 8vw, 2rem);
@@ -79,12 +78,22 @@ const HeroContent = styled.div`
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
     text-align: left;
     margin-bottom: 0.8rem;
+    color: #f1f1f1;
+
+    &:hover {
+      color: #ba135d;
+    }
   }
 
   p {
     margin-bottom: 1.5rem;
     font-weight: 600;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+    color: #f1f1f1;
+
+    &:hover {
+      color: #ba135d;
+    }
   }
 `;
 
