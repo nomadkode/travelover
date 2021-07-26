@@ -1,8 +1,10 @@
-import styled from 'styled-components';
-import { menuData } from '../data/menuData';
-import { Button } from './Button';
-import { Link } from 'react-router-dom';
-import { FaTimes } from 'react-icons/fa';
+import { memo } from "react";
+
+import styled from "styled-components";
+import { menuData } from "../data/menuData";
+import { Button } from "./Button";
+import { Link } from "react-router-dom";
+import { FaTimes } from "react-icons/fa";
 
 const DropdownContainer = styled.div`
   position: fixed;
@@ -15,8 +17,8 @@ const DropdownContainer = styled.div`
   top: 0;
   left: 0;
   transition: 0.3s ease-in-out;
-  opacity: ${({ openIcon }) => (openIcon ? '1' : '0')};
-  top: ${({ openIcon }) => (openIcon ? '0' : '-100%')};
+  opacity: ${({ openIcon }) => (openIcon ? "1" : "0")};
+  top: ${({ openIcon }) => (openIcon ? "0" : "-100%")};
 `;
 
 const Icon = styled.div`
@@ -64,26 +66,24 @@ const BtnWrap = styled.div`
   align-items: center;
 `;
 
-export const Dropdown = ({ openIcon, toggle }) => {
-  return (
-    <DropdownContainer openIcon={openIcon} onClick={toggle}>
-      <Icon onClick={toggle}>
-        <CloseIcon />
-      </Icon>
-      <DropdownWrap>
-        <DropdownMenu>
-          {menuData.map((item, index) => (
-            <DropdownLink to={item.link} key={index}>
-              {item.title}
-            </DropdownLink>
-          ))}
-        </DropdownMenu>
-        <BtnWrap>
-          <Button primary="true" round="true" to="/contact">
-            Contact Us
-          </Button>
-        </BtnWrap>
-      </DropdownWrap>
-    </DropdownContainer>
-  );
-};
+export const Dropdown = memo(({ openIcon, toggle }) => (
+  <DropdownContainer openIcon={openIcon} onClick={toggle}>
+    <Icon onClick={toggle}>
+      <CloseIcon />
+    </Icon>
+    <DropdownWrap>
+      <DropdownMenu>
+        {menuData.map((item, index) => (
+          <DropdownLink to={item.Link} key={index}>
+            {item.title}
+          </DropdownLink>
+        ))}
+      </DropdownMenu>
+      <BtnWrap>
+        <Button primary="true" round="true" to="/contact">
+          Contact Us
+        </Button>
+      </BtnWrap>
+    </DropdownWrap>
+  </DropdownContainer>
+));

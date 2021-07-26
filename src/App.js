@@ -13,9 +13,7 @@ import { infoDataThree } from './data/infoData';
 const App = () => {
   const [openIcon, setOpenIcon] = useState(false);
 
-  const toggle = () => {
-    setOpenIcon(!openIcon);
-  };
+  const toggle = useCallback(() => void setOpenIcon(!openIcon), [openIcon]);
 
   return (
     <div>
@@ -31,4 +29,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default memo(App);
