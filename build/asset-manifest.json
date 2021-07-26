@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.js": "/travelover/static/js/main.fd4d368c.chunk.js",
+    "main.js.map": "/travelover/static/js/main.fd4d368c.chunk.js.map",
+    "runtime-main.js": "/travelover/static/js/runtime-main.272c454d.js",
+    "runtime-main.js.map": "/travelover/static/js/runtime-main.272c454d.js.map",
+    "static/js/2.6a0d2f72.chunk.js": "/travelover/static/js/2.6a0d2f72.chunk.js",
+    "static/js/2.6a0d2f72.chunk.js.map": "/travelover/static/js/2.6a0d2f72.chunk.js.map",
+    "static/js/3.55a1a9d6.chunk.js": "/travelover/static/js/3.55a1a9d6.chunk.js",
+    "static/js/3.55a1a9d6.chunk.js.map": "/travelover/static/js/3.55a1a9d6.chunk.js.map",
+    "index.html": "/travelover/index.html",
+    "static/js/2.6a0d2f72.chunk.js.LICENSE.txt": "/travelover/static/js/2.6a0d2f72.chunk.js.LICENSE.txt",
+    "static/media/austria.3c9dc66a.jpg": "/travelover/static/media/austria.3c9dc66a.jpg",
+    "static/media/bali.9fcb8a7c.jpg": "/travelover/static/media/bali.9fcb8a7c.jpg",
+    "static/media/bars.8f43271b.svg": "/travelover/static/media/bars.8f43271b.svg",
+    "static/media/borabora.54187ba5.jpg": "/travelover/static/media/borabora.54187ba5.jpg",
+    "static/media/cappadocia.89f19065.jpg": "/travelover/static/media/cappadocia.89f19065.jpg",
+    "static/media/hawaii.a94c77b2.jpg": "/travelover/static/media/hawaii.a94c77b2.jpg",
+    "static/media/heidelberg.88bb45c2.jpg": "/travelover/static/media/heidelberg.88bb45c2.jpg",
+    "static/media/ibiza.4b3ad8bb.jpg": "/travelover/static/media/ibiza.4b3ad8bb.jpg",
+    "static/media/kyoto.91fe2120.jpg": "/travelover/static/media/kyoto.91fe2120.jpg",
+    "static/media/mendoza.8a63c20f.jpg": "/travelover/static/media/mendoza.8a63c20f.jpg",
+    "static/media/nairobi.d5bebdb2.jpg": "/travelover/static/media/nairobi.d5bebdb2.jpg",
+    "static/media/nassau.6e0a25eb.jpg": "/travelover/static/media/nassau.6e0a25eb.jpg",
+    "static/media/petra.7c40d0ed.jpg": "/travelover/static/media/petra.7c40d0ed.jpg",
+    "static/media/phiphi.3d76d49f.jpg": "/travelover/static/media/phiphi.3d76d49f.jpg",
+    "static/media/rio.ac2e86b7.jpg": "/travelover/static/media/rio.ac2e86b7.jpg",
+    "static/media/santorini.79a3d582.jpg": "/travelover/static/media/santorini.79a3d582.jpg",
+    "static/media/switzerland.c5050c1c.jpg": "/travelover/static/media/switzerland.c5050c1c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.272c454d.js",
+    "static/js/2.6a0d2f72.chunk.js",
+    "static/js/main.fd4d368c.chunk.js"
+  ]
+}
